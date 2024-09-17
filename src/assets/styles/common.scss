@@ -45,11 +45,38 @@ body {
   color: #fff;
   font-family: inherit;
   padding: 10px 24px;
+  &.active,
   &:not(:disabled):hover {
     background: #70d159;
   }
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+}
+
+.modal-text {
+  color: #70d159;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.modal-w {
+  z-index: 10000;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  &.open {
+    opacity: 1;
+    pointer-events: all;
   }
 }
