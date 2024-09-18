@@ -10,9 +10,8 @@ body,
 }
 
 body {
-  font-family: "Kaufland Regular", sans-serif;
-  font-size: 16px;
-  background: #f0f0f0;
+  font-family: "Lexend", sans-serif;
+  font-size: 19px;
 }
 
 .container {
@@ -38,16 +37,18 @@ body {
 
 .btn {
   cursor: pointer;
-  border: 0;
-  background-color: #424242;
-  font-size: 16px;
+  border: 3px solid #e10915;
+  background-color: #e10915;
+  font-size: 19px;
   font-weight: 600;
+  border-radius: 4px;
   color: #fff;
   font-family: inherit;
   padding: 10px 24px;
   &.active,
   &:not(:disabled):hover {
-    background: #70d159;
+    background: #fff;
+    color: #e10915;
   }
   &:disabled {
     opacity: 0.5;

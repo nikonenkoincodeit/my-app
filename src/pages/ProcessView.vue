@@ -168,6 +168,12 @@ const selectPrecess = (id) => {
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
   <style scoped>
+.main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .footer .container {
   display: flex;
   justify-content: space-between;
@@ -195,9 +201,17 @@ const selectPrecess = (id) => {
   width: 505px;
 }
 .btns {
-  padding: 50px 15px;
+  padding-top: 40px;
   display: flex;
   justify-content: center;
   gap: 15px;
+}
+:deep(.multiselect__tag) {
+  background: #e10915;
+}
+:deep(.multiselect__tag-icon::after) {
+  content: "×";
+  color: #fff;
+  font-size: 16px;
 }
 </style>
