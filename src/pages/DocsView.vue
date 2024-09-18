@@ -57,11 +57,11 @@ const getFileName = (filename) => {
 .card {
   padding: 10px;
   border-radius: 4px;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   width: fit-content;
   cursor: pointer;
   &.active {
-    border-color: #ff0000;
+    border-color: #e10915;
   }
 }
 .card-title {

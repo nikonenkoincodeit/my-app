@@ -167,7 +167,7 @@ const selectPrecess = (id) => {
 </script>
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
-  <style scoped>
+  <style scoped lang="scss">
 .main .container {
   display: flex;
   flex-direction: column;
@@ -213,5 +213,11 @@ const selectPrecess = (id) => {
   content: "×";
   color: #fff;
   font-size: 16px;
+}
+:deep(.multiselect__option--highlight) {
+  background: #e10915;
+  &::after {
+    background: #e10915;
+  }
 }
 </style>
